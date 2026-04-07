@@ -1,17 +1,35 @@
-# React + Vite
+# 🚀 BopSquatch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BopSquatch is a mini social media-style web app where users can upload and view images/videos — built to explore real-world file handling with **Supabase Storage**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 📤 Upload images & videos
+- 🗂️ Store files using Supabase Storage
+- 🧾 Save file metadata in a database
+- 📰 View posts in a simple feed
+- ⚡ Fast and responsive UI with React + Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 What I Built This For
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# BopSquatch
+This project is focused on learning:
+
+- How file uploads actually work (not just text data)
+- How to use **Supabase Storage + Database together**
+- How real apps (like Instagram/TikTok) handle media
+
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ React (Vite)
+- 🟢 Supabase (Auth, Database, Storage)
+- 🎨 CSS / Tailwind (optional)
+
+---
+
+## 📂 Project Structure (Simple View)
