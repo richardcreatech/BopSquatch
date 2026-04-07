@@ -62,3 +62,59 @@
 #home_footer #inner_footer span{
   @apply flex-col text-center items-center gap-2;
 }
+
+
+/* Responsive Design for Mobile Devices */
+
+@media (max-width: 768px){
+  /* Body Layout */
+  body{
+    @apply flex flex-col min-h-screen;
+  }
+
+  /* MAIN LAYOUT */
+  #home_main{
+    flex-direction: column-reverse;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* TEXT SIDE */
+  #home_main #side_1 h1{
+    font-size: 2rem; /* shrink big heading */
+  }
+
+  /* BUTTONS STACK */
+  #home_main #side_1 #buttons{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #home_main #side_1 #buttons button{
+    width: 100%;
+    max-width: 250px;
+  }
+
+  /* IMAGE SIDE */
+  #home_main #side_2{
+    margin-top: 20px;
+  }
+
+  #home_main img{
+    width: 250p;
+  }
+
+  /* FOOTER FIX */
+  #home_footer{
+    position: static; /* remove fixed */
+    display: none;
+  }
+
+  #home_footer #inner_footer{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+}
