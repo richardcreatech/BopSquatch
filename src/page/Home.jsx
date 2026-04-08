@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faUsers, faHeart } from "@fortawesome/free-solid-svg-icons";
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.png";
 import Mascot from "../assets/mascot.png";
 import { Link } from "react-router-dom";
 
@@ -17,8 +17,8 @@ function Home() {
           <h1>Socializing Just Got <br /> an Upgrade</h1>
           <p>Let’s Socialize in a brand new way today!!</p>
           <div id="buttons">
-            <button id="login">Get Started</button>
-            <button id="sign_up">Sign Up</button>
+            <button id="login"><Link to="/login">Get Started</Link></button>
+            <button id="sign_up"><Link to="/signup">Sign Up</Link></button>
           </div>
         </div>
 

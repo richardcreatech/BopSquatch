@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+
+*::-webkit-scrollbar{display: none}
+
+/* Styling for the Home Page */
+
 #home_header{
    @apply flex items-center justify-between p-4  text-black;
 }
@@ -56,11 +61,11 @@
 }
 
 #home_footer #inner_footer{
-  @apply flex w-[100%] p-2 border-2 border-gray-600 justify-between;
+  @apply flex w-[100%] shadow-lg p-2  justify-between border-8;
 }
 
 #home_footer #inner_footer span{
-  @apply flex-col text-center items-center gap-2;
+  @apply flex-col text-center items-center gap-2 text-sm text-black;
 }
 
 
@@ -117,4 +122,126 @@
     gap: 10px;
   }
 
+}
+
+/* Styling for the 404 Page */
+#four_0_four_main{
+  @apply flex flex-col items-center justify-center h-screen text-center p-4;
+}
+
+#four_0_four_main .logo{
+  @apply w-120 mb-8;
+}
+
+/* Login Page Styling */
+
+#login_main{
+  @apply fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-100;
+  /* border: 2px solid black; */
+}
+
+#login_main form{
+  @apply bg-white p-8 rounded shadow-md w-[90%]  h-[60%] max-w-md flex flex-col justify-center items-center gap-6;
+}
+
+#login_header{
+  @apply text-2xl font-bold mb-6 text-center flex flex-col items-center gap-4;
+}
+
+#login_box{
+  @apply flex flex-col gap-4 w-[90%] justify-center items-center;
+}
+
+#login_box input{
+  @apply w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+#login_box button[type="submit"]{
+  @apply bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition duration-300 w-full;
+}
+
+#login_box a{
+  @apply text-green-500 hover:underline text-sm;
+}
+
+#login_header img{
+  @apply w-20 h-20 mb-4;
+}
+
+
+/* Sign Up Page Styling */
+#signup_main{
+  @apply fixed top-0 left-0 w-[100%] h-[100%] flex bg-gray-100 justify-center items-center p-4;
+}
+
+#signup_main #login{
+  @apply text-green-500;  
+}
+
+#signup_main h2{
+@apply text-2xl font-bold  text-center flex flex-col items-center ;
+
+
+}
+
+
+#signup_main #inner_signup{
+  @apply bg-white p-8 rounded shadow-md w-[90%] h-[80%]  flex  justify-center items-center gap-6;
+}
+
+#signup_main #inner_signup form{
+  @apply flex flex-col gap-4 w-[50%] ;
+}
+
+
+
+#signup_main #inner_signup form #signup_box{
+  @apply flex flex-col gap-4 ;
+}
+
+#signup_main #inner_signup form #signup_box input{
+  @apply w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+#signup_main #inner_signup form #sign_up_button{
+  @apply bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition duration-300 w-full;
+}
+
+#signup_main #inner_signup #mascot_poses{
+  @apply w-[50%] flex justify-center items-center border-2 h-[100%] rounded-lg;
+}
+
+@media (max-width: 768px) {
+
+  #signup_main {
+    @apply p-2 h-[100%];
+  }
+
+  #signup_main #inner_signup {
+    @apply flex flex-col-reverse h-auto w-full p-4 gap-4;
+  }
+
+  #signup_main #inner_signup form {
+    @apply w-full;
+  }
+
+  #signup_main #inner_signup #mascot_poses {
+    @apply w-full h-[200px] border-0;
+  }
+
+  #signup_main #inner_signup #mascot_poses img {
+    @apply h-full object-contain;
+  }
+
+  #signup_main h2 {
+    @apply text-xl;
+  }
+
+  #signup_main #inner_signup form #signup_box input {
+    @apply py-3;
+  }
+
+  #signup_main #inner_signup form #sign_up_button {
+    @apply py-2;
+  }
 }
