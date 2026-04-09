@@ -1,7 +1,11 @@
 import React from "react";
 import logo from "../assets/logo.jpg";
+import supabase from "../config/supabase_client";
 
 function Login() {
+
+  
+
   return (
     <main id="login_main">
       <form>
